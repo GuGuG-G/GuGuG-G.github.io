@@ -3,22 +3,13 @@
   <entry>
     <title>GitHub+hexo搭建博客网站</title>
     <url>/2023/07/02/GitHub+hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>利用到的node.js</p>
+    <content><![CDATA[<p>ceshi</p>
 ]]></content>
-      <tags>
-        <tag>博客搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计模式</title>
-    <url>/2023/07/02/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
       <categories>
-        <category>软件工程</category>
-        <category>设计模式</category>
+        <category>Blog</category>
       </categories>
       <tags>
-        <tag>设计模式</tag>
+        <tag>Blog</tag>
       </tags>
   </entry>
   <entry>
@@ -38,21 +29,5 @@
 
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>文章3</title>
-    <url>/2023/07/02/Untitled%20Folder/QQ%E8%B7%B3%E8%BD%AC%E6%B7%BB%E5%8A%A0%E5%A5%BD%E5%8F%8B/</url>
-    <content><![CDATA[<p>tencent:&#x2F;&#x2F;Message&#x2F;?Uin&#x3D;2268025923&amp;websiteName&#x3D;local.edu.com:8888&#x3D;&amp;Menu&#x3D;yes</p>
-<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="code"><pre><span class="line">http://wpa.qq.com/msgrd?v=3&amp;uin=2472849537&amp;site=qq&amp;menu=yes</span><br></pre></td></tr></table></figure></div>
-
-<p>tencent:&#x2F;&#x2F;AddContact&#x2F;?fromId&#x3D;45&amp;fromSubId&#x3D;1&amp;subcmd&#x3D;all&amp;uin&#x3D;2472849537&amp;website&#x3D;<a class="link"   href="http://www.oicqzone.com/" >www.oicqzone.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>层级1</category>
-      </categories>
-      <tags>
-        <tag>ceshi1</tag>
-        <tag>ceshi2</tag>
-      </tags>
   </entry>
 </search>
