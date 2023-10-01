@@ -34,14 +34,24 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/10/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/Untitled/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>二进制中的整数与小数</title>
-    <url>/2023/09/30/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%B0%8F%E6%95%B0/</url>
+    <url>/2023/09/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%B0%8F%E6%95%B0/</url>
     <content><![CDATA[<h2 id="二进制数转换成十进制数"><a href="#二进制数转换成十进制数" class="headerlink" title="二进制数转换成十进制数"></a>二进制数转换成十进制数</h2><p>将一个十进制小数转换成二进制，通常将二进制数写成加权系数展开式，然后按十进制加法规则求和。这种做法称为”<strong>按权相加</strong>“法。</p>
 <p>可以将这个二进制小数理解为凑小数，正是因为如此二进制小数运算并不精确。</p>
-<p>(如下图)</p>
 <h2 id="十进制数转换成二进制数"><a href="#十进制数转换成二进制数" class="headerlink" title="十进制数转换成二进制数"></a>十进制数转换成二进制数</h2><p>十进制数转换为二进制数时，将十进制数的整数部分和小数部分分别转换后，再加以合并。</p>
-<h3 id="十进制整数转换成二进制整数"><a href="#十进制整数转换成二进制整数" class="headerlink" title="十进制整数转换成二进制整数"></a>十进制整数转换成二进制整数</h3><p>十进制整数转换为二进制整数采用”<strong>除2取余，逆序排列</strong>“法。</p>
-<h3 id="十进制整数转换成二进制整数-1"><a href="#十进制整数转换成二进制整数-1" class="headerlink" title="十进制整数转换成二进制整数"></a>十进制整数转换成二进制整数</h3><p>十进制小数转换成二进制小数采用”**乘2取整，顺序排列”**法。</p>
+<ol>
+<li>整数转换成二进制整数</li>
+</ol>
+<p>十进制整数转换为二进制整数采用”<strong>除2取余，逆序排列</strong>“法。</p>
+<ol start="2">
+<li>整数转换成二进制整数</li>
+</ol>
+<p>十进制小数转换成二进制小数采用”**乘2取整，顺序排列”**法。</p>
 ]]></content>
       <categories>
         <category>计算机组成</category>
@@ -49,6 +59,70 @@
       <tags>
         <tag>二进制</tag>
         <tag>计组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二进制中的整数与小数</title>
+    <url>/2023/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E5%92%8C%E7%A7%BB%E7%A0%81/</url>
+    <content><![CDATA[<p>原码、反码、补码和移码</p>
+<ul>
+<li>原码：</li>
+<li>反码：</li>
+<li>补码：</li>
+<li>移码：</li>
+</ul>
+<p>例子：</p>
+<table>
+<thead>
+<tr>
+<th>编码</th>
+<th>10810（sbyte）</th>
+<th>-10810（sbyte）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>原码</td>
+<td><strong>0</strong>1101100</td>
+<td><strong>1</strong>1101100</td>
+</tr>
+<tr>
+<td>反码</td>
+<td><strong>0</strong>1101100</td>
+<td><strong>1</strong>0010011</td>
+</tr>
+<tr>
+<td>补码</td>
+<td><strong>0</strong>1101100</td>
+<td><strong>1</strong>0010100</td>
+</tr>
+<tr>
+<td>移码</td>
+<td><strong>1</strong>1101100</td>
+<td><strong>0</strong>0010100</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>计算机组成</category>
+      </categories>
+      <tags>
+        <tag>计组</tag>
+        <tag>原码</tag>
+        <tag>反码</tag>
+        <tag>补码</tag>
+        <tag>移码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>二进制中的整数与小数</title>
+    <url>/2023/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%B5%AE%E7%82%B9%E6%95%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机组成</category>
+      </categories>
+      <tags>
+        <tag>计组</tag>
+        <tag>浮点数</tag>
       </tags>
   </entry>
 </search>
