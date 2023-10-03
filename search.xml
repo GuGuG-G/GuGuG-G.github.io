@@ -115,14 +115,124 @@
       </tags>
   </entry>
   <entry>
-    <title>浮点数</title>
+    <title>浮点数与定点数</title>
     <url>/2023/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%B5%AE%E7%82%B9%E6%95%B0/</url>
+    <content><![CDATA[<p>###定点数与浮点数的区别</p>
+<h4 id="定点数"><a href="#定点数" class="headerlink" title="定点数"></a>定点数</h4><p>当机器字长为n时，定点数的补码和移码可表示2^n个数,原码和反码表示2^n，表示的数值范围小，而且容易造成溢出。</p>
+<h4 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h4><p>小数点位置不固定的数，增加了指数部，使得其可以表示更大范围内的数。</p>
+<p>浮点数计算机中任意二进制表示为:&#x3D;&#x3D;N &#x3D; 2 e . M&#x3D;&#x3D; （其中N为任意二进制数，2位基数，M为尾数）</p>
+<h6 id="组成结构"><a href="#组成结构" class="headerlink" title="组成结构"></a>组成结构</h6><p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/1-03.png"
+                      alt="1-03"
+                ></p>
+<p><strong>符号位</strong>表示这个数据的正负，0表示正数，1表示负数</p>
+<p><strong>阶码</strong>表示指数部分</p>
+<p><strong>尾数</strong>表示小数部分</p>
+<h3 id="浮点数-1"><a href="#浮点数-1" class="headerlink" title="浮点数"></a>浮点数</h3><h4 id="浮点数的三种数据类型"><a href="#浮点数的三种数据类型" class="headerlink" title="浮点数的三种数据类型"></a>浮点数的三种数据类型</h4><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>字长</th>
+<th>符号位</th>
+<th>阶码</th>
+<th>尾数</th>
+<th>最大指数</th>
+<th>最小指数</th>
+<th>可表示的实数范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>32bit</td>
+<td>1 bit</td>
+<td>8 bit</td>
+<td>23 bit</td>
+<td>+127</td>
+<td>-126</td>
+<td>10^-38^ ~ 10^38^</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64bit</td>
+<td>1 bit</td>
+<td>11 bit</td>
+<td>52 bit</td>
+<td>+1023</td>
+<td>-1022</td>
+<td>10^-308^ ~ 10^308^</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>80bit</td>
+<td>1 bit</td>
+<td>15bit</td>
+<td>64bit</td>
+<td>+16383</td>
+<td>-16382</td>
+<td>10^-4932^ ~ 10^4932^</td>
+</tr>
+</tbody></table>
+<p>IEEE 754标准的浮点数有短浮点数（单精度、float型）、长浮点数（双精度、double型）、临时浮点数三种，且数据由三部分组成：</p>
+<ul>
+<li><p>数符：尾数的符号位。1表示负；0表示正</p>
+</li>
+<li><p>尾数：表示数的小数部分，基为2，用原码表示。且隐藏了一位1，这样是为了多表示一位有效位（<strong>临时浮点数无隐含的1</strong>）</p>
+</li>
+<li><p>阶码：表示数的幂，基为2，用&#x3D;&#x3D;移码&#x3D;&#x3D;表示（什么是阶码）</p>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>关于阶码 </summary>
+              <div class='content'>
+              <blockquote><ol><li>为什么要用移码表示阶码？</li></ol><p>  补码不能直观的表示数据的大小比如一个8位的数据：</p><p>  用补码表示 −1<del>10</del> &#x3D; 11111111<del>2</del> &#x3D; FFH ，8<del>10</del> &#x3D; 00001000<del>2</del> &#x3D; 08H</p><p>  8是大于-1的，但是补码的话 FFH &gt; 08H，这与实际结果正好相反。</p><p>  移码通过加上一个偏置值（若数据为 n 位，则通常取偏置值为2 n − 1 2^{n-1}2<br>  n−1，将符号位取反即可），能够反映数据之间的实际大小关系。</p><p>  移码表示 −1<del>10</del>&#x3D; 01111111<del>2</del>&#x3D; 7FH ， 8<del>10</del>&#x3D; 10001000<del>2</del> &#x3D; 88H</p><p>  88H &gt; 7FH 这与预期结果相符合。</p><ol start="2"><li>阶码偏移值（偏置值）</li></ol><p>  阶码部分用移码表示，假设阶码为 n 位，则规定阶码偏置值取 2^n-1^ −1，因此短浮点数、长浮点数、临时浮点数阶码偏置值为移码偏置值不是2^n-1^,为什么是2^n-1^-1，因为阶码全1是用来表示特殊用途。</p></blockquote>
+              </div>
+            </details></li>
+</ul>
+<h4 id="浮点数的编码值"><a href="#浮点数的编码值" class="headerlink" title="浮点数的编码值"></a>浮点数的编码值</h4><p>根据IEEE754标准的编码的值分为（规格化，非规格化，特殊值）这三种情况</p>
+<h5 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h5><p>当阶码部分的二进制值不全为0也不全为1时，即为规格化的值。</p>
+<p>例：176.0625<del>10</del> &#x3D; 1011 0000.0001<del>2</del></p>
+<p>进行规格化处理：1011 0000.0001 &#x3D; 1.0110 0000 001 x 2^7^</p>
+<p>符号位：整数为0</p>
+<p>尾数：去掉小数点前的1将会其后的二进制小数拓展为23位尾数：0110 0000 0010 0000 0000 000（23位）</p>
+<p>阶码：真实指数加上偏移值，E&#x3D;7+127&#x3D;134 &#x3D; 10000110<del>2</del></p>
+<p>浮点数形式：0  10000110  01100000001000000000000</p>
+<h5 id="非规格化"><a href="#非规格化" class="headerlink" title="非规格化"></a>非规格化</h5><p>当阶码部分的二进制值全为0，即为非规格化的值。</p>
+<p>可以这样理解当一个很小的小数，再进行一般规格化处理时，向左偏移了最大偏移量127次以后，阶码部分是0</p>
+<p>非规格化的两个用途：</p>
+<blockquote>
+<p>用来表示数值0</p>
+<p>无限接近0的数</p>
+</blockquote>
+<h5 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h5><p>当阶码部分的二进制值全为1时，即为特殊值</p>
+<p>当尾数部分全为零时，表示无穷大。</p>
+<blockquote>
+<p>当符号位为0，**$+\infty$**</p>
+<p>当符号位为1， $-\infty$</p>
+</blockquote>
+<p>例：176.0625<del>10</del> &#x3D; 1011 0000.0001<del>2</del></p>
+<p>进行规格化处理：1011 0000.0001 &#x3D; 1.0110 0000 001 x 2^7^</p>
+<p>去掉小数点前的1将会其后的二进制小数拓展为23位尾数：0110 0000 0010 0000 0000 000（23位）</p>
+]]></content>
+      <categories>
+        <category>计算机组成</category>
+      </categories>
+      <tags>
+        <tag>计组</tag>
+        <tag>浮点数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据表示</title>
+    <url>/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>计算机组成</category>
       </categories>
       <tags>
         <tag>计组</tag>
+        <tag>原码</tag>
+        <tag>反码</tag>
+        <tag>补码</tag>
+        <tag>移码</tag>
         <tag>浮点数</tag>
       </tags>
   </entry>
