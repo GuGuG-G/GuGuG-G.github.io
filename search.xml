@@ -115,6 +115,22 @@
       </tags>
   </entry>
   <entry>
+    <title>数据表示</title>
+    <url>/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机组成</category>
+      </categories>
+      <tags>
+        <tag>计组</tag>
+        <tag>原码</tag>
+        <tag>反码</tag>
+        <tag>补码</tag>
+        <tag>移码</tag>
+        <tag>浮点数</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>浮点数与定点数</title>
     <url>/2023/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%B5%AE%E7%82%B9%E6%95%B0/</url>
     <content><![CDATA[<h3 id="定点数与浮点数的区别"><a href="#定点数与浮点数的区别" class="headerlink" title="定点数与浮点数的区别"></a>定点数与浮点数的区别</h3><h4 id="定点数"><a href="#定点数" class="headerlink" title="定点数"></a>定点数</h4><p>当机器字长为n时，定点数的补码和移码可表示2^n个数,原码和反码表示2^n，表示的数值范围小，而且容易造成溢出。</p>
@@ -219,22 +235,6 @@
       </categories>
       <tags>
         <tag>计组</tag>
-        <tag>浮点数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据表示</title>
-    <url>/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机组成</category>
-      </categories>
-      <tags>
-        <tag>计组</tag>
-        <tag>原码</tag>
-        <tag>反码</tag>
-        <tag>补码</tag>
-        <tag>移码</tag>
         <tag>浮点数</tag>
       </tags>
   </entry>
