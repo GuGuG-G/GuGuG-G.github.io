@@ -133,9 +133,9 @@
   <entry>
     <title>浮点数与定点数</title>
     <url>/2023/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/%E6%B5%AE%E7%82%B9%E6%95%B0/</url>
-    <content><![CDATA[<h3 id="定点数与浮点数的区别"><a href="#定点数与浮点数的区别" class="headerlink" title="定点数与浮点数的区别"></a>定点数与浮点数的区别</h3><h4 id="定点数"><a href="#定点数" class="headerlink" title="定点数"></a>定点数</h4><p>当机器字长为n时，定点数的补码和移码可表示2^n个数,原码和反码表示2^n，表示的数值范围小，而且容易造成溢出。</p>
+    <content><![CDATA[<h3 id="浮点数与定点数的区别"><a href="#浮点数与定点数的区别" class="headerlink" title="浮点数与定点数的区别"></a>浮点数与定点数的区别</h3><h4 id="定点数"><a href="#定点数" class="headerlink" title="定点数"></a>定点数</h4><p>当机器字长为n时，定点数的补码和移码可表示2^n个数,原码和反码表示2^n，表示的数值范围小，而且容易造成溢出。</p>
 <h4 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h4><p>小数点位置不固定的数，增加了指数部，使得其可以表示更大范围内的数。</p>
-<p>浮点数计算机中任意二进制表示为:N &#x3D;<font color = yellow> 2<sup>E</sup>M</font> （其中N为任意二进制数，2位基数，M为尾数，E为阶码）</p>
+<p>浮点数计算机中任意二进制表示为:<strong>N &#x3D; 2<sup>E</sup>M</strong> （其中N为任意二进制数，2位基数，M为尾数，E为阶码）</p>
 <h6 id="组成结构"><a href="#组成结构" class="headerlink" title="组成结构"></a>组成结构</h6><p> <img  
                      lazyload
                      src="/images/loading.svg"
@@ -151,7 +151,7 @@
               </div>
             </details>
 
-<h4 id="浮点数的三种数据类型"><a href="#浮点数的三种数据类型" class="headerlink" title="浮点数的三种数据类型"></a>浮点数的三种数据类型</h4><table>
+<h3 id="浮点数的三种数据类型"><a href="#浮点数的三种数据类型" class="headerlink" title="浮点数的三种数据类型"></a>浮点数的三种数据类型</h3><table>
 <thead>
 <tr>
 <th>数据类型</th>
@@ -208,7 +208,7 @@
               </div>
             </details></li>
 </ul>
-<h4 id="浮点数的三种编码情况"><a href="#浮点数的三种编码情况" class="headerlink" title="浮点数的三种编码情况"></a>浮点数的三种编码情况</h4><p>根据IEEE754标准的编码的值分为（规格化，非规格化，特殊值）这三种情况</p>
+<h3 id="浮点数的三种编码情况"><a href="#浮点数的三种编码情况" class="headerlink" title="浮点数的三种编码情况"></a>浮点数的三种编码情况</h3><p>根据IEEE754标准的编码的值分为（规格化，非规格化，特殊值）这三种情况</p>
 <h5 id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h5><p>当阶码部分全为0也不全为1时，即为规格化的值。</p>
 <p>对于尾数部分，预定小数点左边隐含有一位1，因此单精度浮点数的有效位数为24位，即位数为1.a<sub>1</sub>..a<sub>23</sub></p>
 <h5 id="非规格化"><a href="#非规格化" class="headerlink" title="非规格化"></a>非规格化</h5><p>当阶码部分全为0，即为非规格化的值。</p>
