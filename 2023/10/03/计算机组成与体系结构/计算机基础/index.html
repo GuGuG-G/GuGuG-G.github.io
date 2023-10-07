@@ -18,16 +18,16 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="数据的表示码制（原码、反码、补码和移码）原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进">
+        <meta name="description" content="一、数据的表示码制 —(⭐)原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进制表示">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机基础知识">
 <meta property="og:url" content="http://example.com/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="数据的表示码制（原码、反码、补码和移码）原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进">
+<meta property="og:description" content="一、数据的表示码制 —(⭐)原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进制表示">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/1-03.png">
 <meta property="article:published_time" content="2023-10-03T07:29:53.253Z">
-<meta property="article:modified_time" content="2023-10-07T08:55:58.628Z">
+<meta property="article:modified_time" content="2023-10-07T17:32:02.588Z">
 <meta property="article:author" content="GuGu">
 <meta property="article:tag" content="浮点数">
 <meta property="article:tag" content="原码">
@@ -355,8 +355,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-07 16:55:58</span>
-            <span class="mobile">2023-10-07 16:55:58</span>
+            <span class="desktop">2023-10-08 01:32:02</span>
+            <span class="mobile">2023-10-08 01:32:02</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -444,17 +444,17 @@
 
 
         <div class="article-content markdown-body">
-            <h1 id="数据的表示"><a href="#数据的表示" class="headerlink" title="数据的表示"></a>数据的表示</h1><h2 id="码制（原码、反码、补码和移码）"><a href="#码制（原码、反码、补码和移码）" class="headerlink" title="码制（原码、反码、补码和移码）"></a>码制（原码、反码、补码和移码）</h2><p>原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正）</p>
+            <h1 id="一、数据的表示"><a href="#一、数据的表示" class="headerlink" title="一、数据的表示"></a>一、数据的表示</h1><h2 id="码制-—-⭐"><a href="#码制-—-⭐" class="headerlink" title="码制 —(⭐)"></a>码制 —(⭐)</h2><p>原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正）</p>
 <p>反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。</p>
 <p>补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。</p>
 <p>移码：将符号位取反的补码（不区分正负）</p>
-<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>例子：108<sub>10</sub>的2进制表示108 </summary>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>例子：108<sub>10</sub>的2进制表示 </summary>
               <div class='content'>
               <table><thead><tr><th>编码</th><th>108<sub>10</sub>（sbyte）</th><th>-108<sub>10</sub>（sbyte）</th></tr></thead><tbody><tr><td>原码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>1101100</td></tr><tr><td>反码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>0010011</td></tr><tr><td>补码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>0010100</td></tr><tr><td>移码</td><td><strong>1</strong>1101100</td><td><strong>0</strong>0010100</td></tr></tbody></table>
               </div>
             </details>
 
-<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><h3 id="浮点数与定点数的区别"><a href="#浮点数与定点数的区别" class="headerlink" title="浮点数与定点数的区别"></a>浮点数与定点数的区别</h3><blockquote>
+<h2 id="浮点数-—-⭐⭐"><a href="#浮点数-—-⭐⭐" class="headerlink" title="浮点数 —(⭐⭐)"></a>浮点数 —(⭐⭐)</h2><h3 id="浮点数与定点数的区别"><a href="#浮点数与定点数的区别" class="headerlink" title="浮点数与定点数的区别"></a>浮点数与定点数的区别</h3><blockquote>
 <p>定点数：当机器字长为n时，定点数的补码和移码可表示2<sup>n</sup>个数,原码和反码表示2<sup>n-1</sup>，表示的数值范围小，而且容易造成溢出。<br>浮点数：小数点位置不固定的数，增加了指数部，使得其可以表示更大范围内的数。</p>
 </blockquote>
 <h3 id="浮点数的格式"><a href="#浮点数的格式" class="headerlink" title="浮点数的格式"></a>浮点数的格式</h3><p>浮点数在计算机中的二进制表达公式为:<strong>N &#x3D; 2<sup>E</sup>M</strong> （其中N为任意二进制数，2位基数，M为尾数，E为阶码）</p>
@@ -480,8 +480,8 @@
               </div>
             </details>
 
-<h3 id="规格化浮点数"><a href="#规格化浮点数" class="headerlink" title="规格化浮点数"></a>规格化浮点数</h3><p>很明显一个数的浮点数表示并不唯一。且浮点数的数值表示范围由阶码决定，数值的精度由尾数决定。规格化浮点数就是为了充分利用位数来表示有效数字。<br>规格化浮点数就是将尾数的绝对值限定在在区间[0.5,1]</p>
-<h4 id="尾数用原码-x2F-补码表示"><a href="#尾数用原码-x2F-补码表示" class="headerlink" title="尾数用原码&#x2F;补码表示"></a>尾数用原码&#x2F;补码表示</h4><table>
+<h3 id="一般规格化浮点数"><a href="#一般规格化浮点数" class="headerlink" title="一般规格化浮点数"></a>一般规格化浮点数</h3><p>很明显一个数的浮点数表示并不唯一，且浮点数的数值表示范围由阶码决定，数值的精度由尾数决定。规格化浮点数就是为了充分利用位数来表示有效数字。<br>规格化浮点数就是将尾数的绝对值限定在在区间[0.5,1]</p>
+<h4 id="原码-x2F-补码规格化位数"><a href="#原码-x2F-补码规格化位数" class="headerlink" title="原码&#x2F;补码规格化位数"></a>原码&#x2F;补码规格化位数</h4><table>
 <thead>
 <tr>
 <th>码制</th>
@@ -521,7 +521,7 @@
 </tr>
 </tbody></table>
 <p><strong>采用双符号位可以很方便地判断溢出的问题</strong></p>
-<h3 id="IEEE754规格化浮点数"><a href="#IEEE754规格化浮点数" class="headerlink" title="IEEE754规格化浮点数"></a>IEEE754规格化浮点数</h3><h4 id="3种IEEE754标准（浮点数格式）"><a href="#3种IEEE754标准（浮点数格式）" class="headerlink" title="3种IEEE754标准（浮点数格式）"></a>3种IEEE754标准（浮点数格式）</h4><p>IEEE 754标准的浮点数有短浮点数（单精度、float型）、长浮点数（双精度、double型）、临时浮点数这三种。</p>
+<h4 id="IEEE754规格化浮点数"><a href="#IEEE754规格化浮点数" class="headerlink" title="IEEE754规格化浮点数"></a>IEEE754规格化浮点数</h4><p>IEEE754标准的浮点数有短浮点数（单精度、float型）、长浮点数（双精度、double型）、临时浮点数这三种规格化格式。</p>
 <table>
 <thead>
 <tr>
@@ -572,7 +572,7 @@
               </div>
             </details>
 
-<h3 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>设有两个浮点数X、Y,实现X+-Y，X&#x3D;M<sub>x</sub>2<sup>Ey</sup>,Y&#x3D;M<sub>x</sub>y2<sup>Ey</sup>均为规格化数</p>
+<h3 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>设有两个浮点数X、Y,实现X±Y，X&#x3D;M<sub>x</sub>2<sup>Ey</sup>,Y&#x3D;M<sub>x</sub>y2<sup>Ey</sup>均为规格化数</p>
 <h4 id="运算步骤"><a href="#运算步骤" class="headerlink" title="运算步骤"></a>运算步骤</h4><ol>
 <li>对阶</li>
 </ol>
@@ -593,7 +593,7 @@
 </blockquote>
 <details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>如何进行规格化 </summary>
               <div class='content'>
-              <p>规格化规则：<br>如果结果的两个符号位的值不同，表示加减法运算尾数结果溢出。此时将尾数结果右移1位，阶码E+1，称为向右规格化，简称“右规”。<br>如果结果的两个符号位的值相同，表示加减法运算尾数结果不溢出。若最高数值位与符号位相同，此时尾数连续左移，直到最高数值位与符号位的值不同为止。同时 E-m(移位的位数) ,称为向左规格化，简称“左规”。</p>
+              <p>规格化规则</p><p>右规：如果结果的两个符号位的值不同，表示加减法运算尾数结果溢出。此时将尾数结果右移1位，阶码E+1，称为向右规格化。<br>左规：如果结果的两个符号位的值相同，表示加减法运算尾数结果不溢出。若最高数值位与符号位相同，此时尾数连续左移，直到最高数值位与符号位的值不同为止。同时 E-m(移位的位数) ,称为向左规格化</p>
               </div>
             </details>
 
@@ -609,7 +609,154 @@
 <blockquote>
 <p>以阶码为准，若阶码溢出，运算结果溢出，阶码下溢，结果为零</p>
 </blockquote>
-<h1 id="校验码"><a href="#校验码" class="headerlink" title="校验码"></a>校验码</h1>
+<h1 id="二、校验码-—-⭐⭐⭐"><a href="#二、校验码-—-⭐⭐⭐" class="headerlink" title="二、校验码 — (⭐⭐⭐)"></a>二、校验码 — (⭐⭐⭐)</h1><p><strong>意义</strong>：校验码是为了确保数据在传送过程中正确无误，一是提高硬件电路的而可靠请，二是提高代码的校验能力。</p>
+<p><strong>码距</strong>：是指一个编码系统中任意两个合法编码之间至少有多少二进制位不同。</p>
+<blockquote>
+<p>校验码就是在码距的原理上产生的，码距越大校验能力，纠错能力越强，所以奇偶校验码、海明码、CRC码究其原理都是利用一系列规则提升一段码字的码距而已.</p>
+</blockquote>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>如何理解码距 </summary>
+              <div class='content'>
+              <p class='h5' id="用3bit的数据表示八种不同的信息"><a href="#用3bit的数据表示八种不同的信息" class="headerlink" title="用3bit的数据表示八种不同的信息"></a>用3bit的数据表示八种不同的信息</h5><table><thead><tr><th>序数</th><th>a<sub>2</sub></th><th>a<sub>1</sub></th><th>a<sub>0</sub></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>2</td><td>0</td><td>1</td><td>0</td></tr><tr><td>3</td><td>0</td><td>1</td><td>1</td></tr><tr><td>4</td><td>1</td><td>0</td><td>0</td></tr><tr><td>5</td><td>1</td><td>0</td><td>1</td></tr><tr><td>6</td><td>1</td><td>1</td><td>0</td></tr><tr><td>7</td><td>1</td><td>1</td><td>1</td></tr></tbody></table><p>观察可知任意两个信息种至少有一个码数不相同，其中任意一个字符错误都可以变成另一个合法的编码，因此不具有检错能力。</p><h5 id="再用4bit的数据表示八种不同的信息"><a href="#再用4bit的数据表示八种不同的信息" class="headerlink" title="再用4bit的数据表示八种不同的信息"></a>再用4bit的数据表示八种不同的信息</h5><table><thead><tr><th>序数</th><th>a<sub>3</sub></th><th>a<sub>2</sub></th><th>a<sub>1</sub></th><th>a<sub>0</sub></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>2</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>4</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>5</td><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>6</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>7</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table><p>观察可知任意两个信息至少保持两个码数不同 ,此时可以称码距为2。</p><p>如果此时任意一个数据种的任意一个数据位发生改变都将无法匹配到有效的信息位，如此便有了检错能力。</p>
+              </div>
+            </details>
+
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>码距与检错和纠错能力的关系 </summary>
+              <div class='content'>
+              <table><thead><tr><th>码距</th><th>码检错能力</th><th>码纠错能力</th></tr></thead><tbody><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>2</td><td>1</td><td>0</td></tr><tr><td>3</td><td>2或1</td><td>2或1</td></tr><tr><td>4</td><td>2加1</td><td>2加1</td></tr><tr><td>5</td><td>2加2</td><td>2加2</td></tr><tr><td>6</td><td>3加2</td><td>3加2</td></tr><tr><td>7</td><td>3加3</td><td>3加3</td></tr></tbody></table><blockquote><p>码距越大，纠错能力越强，但数据冗余也越大，即编码效率低了</p></blockquote>
+              </div>
+            </details>
+
+<h2 id="奇偶校验-—-⭐"><a href="#奇偶校验-—-⭐" class="headerlink" title="奇偶校验 — (⭐)"></a>奇偶校验 — (⭐)</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>通过在编码中增加一位校验位来使编码中的1的个数为奇数（奇校验）或偶数（偶校验），从而使码距为2</p>
+</blockquote>
+<ul>
+<li><p>奇校验：如果二进制数据中1的个数是奇数，则是奇校验</p>
+</li>
+<li><p>偶校验：如果二进制数据中1的个数是偶数，则是偶校验</p>
+</li>
+</ul>
+<blockquote>
+<p>注:采用何种校验必须事先规定好的，通常传输的数据会专门设置一个奇偶校验位。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>原数据</th>
+<th>奇校验</th>
+<th>偶校验</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1011000_</td>
+<td>1011000<strong>0</strong></td>
+<td>1011000<strong>1</strong></td>
+</tr>
+<tr>
+<td>0011000_</td>
+<td>0011000<strong>1</strong></td>
+<td>0011000<strong>0</strong></td>
+</tr>
+<tr>
+<td>0001000_</td>
+<td>0001000<strong>0</strong></td>
+<td>0001000<strong>1</strong></td>
+</tr>
+</tbody></table>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>奇偶校验码只能查是否有错误，而且要求只有一位出现错误。</p>
+<h2 id="海明编码-—-⭐⭐⭐"><a href="#海明编码-—-⭐⭐⭐" class="headerlink" title="海明编码 —(⭐⭐⭐)"></a>海明编码 —(⭐⭐⭐)</h2><h3 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h3><p>海明码是通过在数据为之间的特定位置插入k个校验码，通过扩大码距来实现检错和纠错。最小码距为3</p>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>设数据位是n位,校验位是k位，n和k满足如下关系：2<sup>k</sup>&gt;&#x3D;n+k+1</p>
+<h3 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h3><blockquote>
+<p>设k个校验码P<sub>k</sub>,…,P<sub>1</sub>,n个数据位D<sub>n-1</sub>,…,D<sub>0</sub></p>
+</blockquote>
+<ol>
+<li><p>校验码P<sub>i</sub>在海明码中的第2<sup>i-1</sup>,数据为依次从第到高占据海明码剩下位置</p>
+</li>
+<li><p>海明码中的任以为都有若干个校验码来校验。对应关系为：被校验的海明码下标等于所有参与校验该位的校验码下标之和。</p>
+</li>
+</ol>
+<p>例：</p>
+<p>确定如下海明码校验关系</p>
+<table>
+<thead>
+<tr>
+<th>H1</th>
+<th>H2</th>
+<th>H3</th>
+<th>H4</th>
+<th>H5</th>
+<th>H6</th>
+<th>H7</th>
+<th>H8</th>
+<th>H9</th>
+<th>H10</th>
+<th>H11</th>
+<th>H12</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P1</td>
+<td>P2</td>
+<td>D0</td>
+<td>P3</td>
+<td>D1</td>
+<td>D2</td>
+<td>D3</td>
+<td>P4</td>
+<td>D4</td>
+<td>D5</td>
+<td>D6</td>
+<td>D7</td>
+</tr>
+</tbody></table>
+<p>数据位与校验码关系：</p>
+<table>
+<thead>
+<tr>
+<th>数据位</th>
+<th>海明码</th>
+<th>校验位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D1</td>
+<td>H5</td>
+<td>P1+P3</td>
+</tr>
+<tr>
+<td>D2</td>
+<td>H6</td>
+<td>P2+P3</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>H7</td>
+<td>P3+P2+P1</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>H9</td>
+<td>P4+P1</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>H10</td>
+<td>P4+P2</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>H11</td>
+<td>P4+P2+P1</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>H12</td>
+<td>P4+P3</td>
+</tr>
+</tbody></table>
+<h3 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h3><p>既可检错又可纠错</p>
+<h2 id="循环冗余-—-⭐"><a href="#循环冗余-—-⭐" class="headerlink" title="循环冗余 —(⭐)"></a>循环冗余 —(⭐)</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>在串行传送（磁盘、通讯）中，广泛采用循环冗余校验码（CRC）。奇偶校验码和海明校验码都是采用奇偶检测为手段榆错和纠错的，而循环冗余校验则是通过某种数学运算来建立数据位和校验位的约定关系。</p>
+<h3 id="作用-2"><a href="#作用-2" class="headerlink" title="作用"></a>作用</h3><p>可检错，不可纠错。</p>
+
         </div>
 
         
@@ -623,7 +770,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-10-07 16:55:58
+                    :</strong> 2023-10-08 01:32:02
             </li>
         
         <li>
@@ -771,7 +918,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">计算机基础知识</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">数据的表示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A0%81%E5%88%B6%EF%BC%88%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E5%92%8C%E7%A7%BB%E7%A0%81%EF%BC%89"><span class="nav-text">码制（原码、反码、补码和移码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">浮点数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E4%B8%8E%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">浮点数与定点数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-text">浮点数的格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%84%E6%A0%BC%E5%8C%96%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">规格化浮点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IEEE754%E8%A7%84%E6%A0%BC%E5%8C%96%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">IEEE754规格化浮点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数运算</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="nav-text">校验码</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">一、数据的表示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A0%81%E5%88%B6-%E2%80%94-%E2%AD%90"><span class="nav-text">码制 —(⭐)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0-%E2%80%94-%E2%AD%90%E2%AD%90"><span class="nav-text">浮点数 —(⭐⭐)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E4%B8%8E%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">浮点数与定点数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-text">浮点数的格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E8%88%AC%E8%A7%84%E6%A0%BC%E5%8C%96%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">一般规格化浮点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数运算</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%A0%A1%E9%AA%8C%E7%A0%81-%E2%80%94-%E2%AD%90%E2%AD%90%E2%AD%90"><span class="nav-text">二、校验码 — (⭐⭐⭐)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C-%E2%80%94-%E2%AD%90"><span class="nav-text">奇偶校验 — (⭐)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8"><span class="nav-text">作用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%B7%E6%98%8E%E7%BC%96%E7%A0%81-%E2%80%94-%E2%AD%90%E2%AD%90%E2%AD%90"><span class="nav-text">海明编码 —(⭐⭐⭐)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89-2"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%AC%E5%BC%8F"><span class="nav-text">公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%84%E5%88%99"><span class="nav-text">规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8-1"><span class="nav-text">作用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99-%E2%80%94-%E2%AD%90"><span class="nav-text">循环冗余 —(⭐)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8-2"><span class="nav-text">作用</span></a></li></ol></li></ol></li></ol>
 
     </div>
 </div>
