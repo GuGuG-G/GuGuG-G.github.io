@@ -13,23 +13,31 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/07/11/每日一句/"/>
+    <link rel="canonical" href="http://example.com/2023/10/03/计算机组成与体系结构/计算机基础/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="7&#x2F;28 I am still waiting for you in situ,but you have forgotten you had been here once. 我还在原地等你，你却已经忘记曾来过这里。 7&#x2F;14 Everybody is somebody. Even a nobody. 每个人都有自己的价值，即使是无名之辈。  7&#x2F;13 There is">
+        <meta name="description" content="数据的表示码制（原码、反码、补码和移码）原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每日一句">
-<meta property="og:url" content="http://example.com/2023/07/11/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/index.html">
+<meta property="og:title" content="计算机基础知识">
+<meta property="og:url" content="http://example.com/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="7&#x2F;28 I am still waiting for you in situ,but you have forgotten you had been here once. 我还在原地等你，你却已经忘记曾来过这里。 7&#x2F;14 Everybody is somebody. Even a nobody. 每个人都有自己的价值，即使是无名之辈。  7&#x2F;13 There is">
+<meta property="og:description" content="数据的表示码制（原码、反码、补码和移码）原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正） 反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。 补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。 移码：将符号位取反的补码（不区分正负） 例子：10810的2进">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-11T13:09:11.597Z">
-<meta property="article:modified_time" content="2023-07-28T06:07:47.696Z">
+<meta property="og:image" content="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/1-03.png">
+<meta property="article:published_time" content="2023-10-03T07:29:53.253Z">
+<meta property="article:modified_time" content="2023-10-07T08:55:58.628Z">
 <meta property="article:author" content="GuGu">
-<meta property="article:tag" content="English">
+<meta property="article:tag" content="浮点数">
+<meta property="article:tag" content="原码">
+<meta property="article:tag" content="反码">
+<meta property="article:tag" content="补码">
+<meta property="article:tag" content="移码">
+<meta property="article:tag" content="计组">
+<meta property="article:tag" content="计算机基础">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/1-03.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +49,7 @@
     
     <title>
         
-            每日一句 -
+            计算机基础知识 -
         
         GuGuG-G
     </title>
@@ -318,7 +326,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">每日一句</h1>
+                <h1 class="article-title-regular">计算机基础知识</h1>
             
             </div>
             
@@ -340,15 +348,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-07-11 21:09:11</span>
-        <span class="mobile">2023-07-11 21:09:11</span>
+        <span class="desktop">2023-10-03 15:29:53</span>
+        <span class="mobile">2023-10-03 15:29:53</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-07-28 14:07:47</span>
-            <span class="mobile">2023-07-28 14:07:47</span>
+            <span class="desktop">2023-10-07 16:55:58</span>
+            <span class="mobile">2023-10-07 16:55:58</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -362,7 +370,7 @@
                     
                         
                         <li>
-                            <a href="/categories/English/">English</a>&nbsp;
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">计算机组成与体系结构</a>&nbsp;
                         </li>
                     
                     
@@ -372,7 +380,7 @@
                             <li>></li>
                         
                         <li>
-                            <a href="/categories/English/Sentence/">Sentence</a>&nbsp;
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">计算机基础知识</a>&nbsp;
                         </li>
                     
                     
@@ -386,7 +394,31 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/English/">English</a>&nbsp;
+                        <a href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%8E%9F%E7%A0%81/">原码</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%8F%8D%E7%A0%81/">反码</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%A1%A5%E7%A0%81/">补码</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%A7%BB%E7%A0%81/">移码</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%AE%A1%E7%BB%84/">计组</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a>&nbsp;
                     </li>
                 
             </ul>
@@ -412,35 +444,190 @@
 
 
         <div class="article-content markdown-body">
-            <p>7&#x2F;28</p>
-<p>I am still waiting for you in situ,but you have forgotten you had been here once.</p>
-<p>我还在原地等你，你却已经忘记曾来过这里。</p>
-<p>7&#x2F;14</p>
-<p>Everybody is somebody. Even a nobody.</p>
-<p>每个人都有自己的价值，即使是无名之辈。</p>
-<hr>
-<p>7&#x2F;13</p>
-<p>There is light at the end of the tunnel.</p>
-<p>守得云开见月明。</p>
+            <h1 id="数据的表示"><a href="#数据的表示" class="headerlink" title="数据的表示"></a>数据的表示</h1><h2 id="码制（原码、反码、补码和移码）"><a href="#码制（原码、反码、补码和移码）" class="headerlink" title="码制（原码、反码、补码和移码）"></a>码制（原码、反码、补码和移码）</h2><p>原码：原码就是符号位加上真值的绝对值，即用第一位表示符号，其余位表示值。（1为负，0为正）</p>
+<p>反码：正数的反码是其原码本身。负数的反码是在其原码的基础上，符号位不变，其余各位取反。</p>
+<p>补码：正数的补码是其原码本身。负数的补码是在其原码的基础上，符号位不变，其余各位取反后加1（即在反码的基础上加1）。</p>
+<p>移码：将符号位取反的补码（不区分正负）</p>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>例子：108<sub>10</sub>的2进制表示108 </summary>
+              <div class='content'>
+              <table><thead><tr><th>编码</th><th>108<sub>10</sub>（sbyte）</th><th>-108<sub>10</sub>（sbyte）</th></tr></thead><tbody><tr><td>原码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>1101100</td></tr><tr><td>反码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>0010011</td></tr><tr><td>补码</td><td><strong>0</strong>1101100</td><td><strong>1</strong>0010100</td></tr><tr><td>移码</td><td><strong>1</strong>1101100</td><td><strong>0</strong>0010100</td></tr></tbody></table>
+              </div>
+            </details>
 
+<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><h3 id="浮点数与定点数的区别"><a href="#浮点数与定点数的区别" class="headerlink" title="浮点数与定点数的区别"></a>浮点数与定点数的区别</h3><blockquote>
+<p>定点数：当机器字长为n时，定点数的补码和移码可表示2<sup>n</sup>个数,原码和反码表示2<sup>n-1</sup>，表示的数值范围小，而且容易造成溢出。<br>浮点数：小数点位置不固定的数，增加了指数部，使得其可以表示更大范围内的数。</p>
+</blockquote>
+<h3 id="浮点数的格式"><a href="#浮点数的格式" class="headerlink" title="浮点数的格式"></a>浮点数的格式</h3><p>浮点数在计算机中的二进制表达公式为:<strong>N &#x3D; 2<sup>E</sup>M</strong> （其中N为任意二进制数，2位基数，M为尾数，E为阶码）</p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/1-03.png"
+                      alt="1-03"
+                ></p>
+<p>符号位(S)：表示数的正负，1表示负，0表示正</p>
+<p>尾数(M)：表示数的小数部分，基为2，用原码或者补码表示。<strong>IEEE754用</strong>原码<strong>表示，其中尾数部分最高位隐藏了一位1，这样是为了多表示一位有效位（临时浮点数无隐含的1）</strong></p>
+<p>阶码(E)：表示数的幂，基为2，<strong>阶码&#x3D;真实指数+偏移值</strong>，IEEE754用<strong>移码</strong>表示。</p>
+<p>阶符(J)：表示阶码的正负，在IEEE754标准中用移码的数值来表示正负和阶码数值。</p>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>关于阶码 (IEEE754标准) </summary>
+              <div class='content'>
+              <blockquote><ol><li><p>为什么要用移码表示阶码？<br>  补码不能直观的表示数据的大小比如一个8位的数据：<br>  用补码表示 −1<sub>10</sub> &#x3D; 11111111<sub>2</sub> &#x3D; FFH ，8<sub>10</sub>&#x3D; 00001000<sub>2</sub> &#x3D; 08H<br>  8是大于-1的，但是补码的话 FFH &gt; 08H，这与实际结果正好相反。<br>  移码通过加上一个偏置值（若数据为 n 位，则通常取偏置值为2<sup></sup>，将符号位取反即可），能够反映数据之间的实际大小关系。<br>  移码表示 −1<sub>10</sub>&#x3D; 01111111<sub>2</sub>&#x3D; 7FH ， 8<sub>10</sub>&#x3D; 10001000<sub>2</sub> &#x3D; 88H<br>88H &gt; 7FH 这与预期结果相符合。</p></li><li><p>阶码偏移值（偏置值）<br>  阶码部分用移码表示，假设阶码为 n 位，则规定阶码偏置值取 2<sup>n-1</sup> −1，因此短浮点数、长浮点数、临时浮点数阶码偏置值为移码偏置值不是2<sup>n-1</sup>,为什么是2<sup>n-1</sup>-1，因为阶码全1是用来表示特殊用途。</p></li><li><p>阶码的取值范围<br>  假设阶码为 n 位，则可表示的范围为 0 到 2<sup>10</sup> -1,因此短浮点数、长浮点数的阶码取值范围为 0到255、0到2047。又因为当阶码全0、阶码全1时有特殊用途，所以阶码E的实际取值范围为 1到254、1到2046（去掉阶码全0和全1）。</p></li></ol></blockquote>
+              </div>
+            </details>
+
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>例：176.0625<sub>10</sub> = 1011 0000.0001<sub>2</sub> </summary>
+              <div class='content'>
+              <p>进行规格化处理：1011 0000.0001 &#x3D; 1.0110 0000 001 x 2<sup>7</sup>（注意这里是IEEE754规格化，并非一般规格化）</p><p>符号位：整数为0</p><p>尾数：去掉小数点前的1将会其后的二进制小数拓展为23位尾数：0110 0000 0010 0000 0000 000（23位）</p><p>阶码：真实指数加上偏移值，E&#x3D;7+127&#x3D;134 &#x3D; 10000110<sub>2</sub></p><p>浮点数形式：0  10000110  01100000001000000000000</p>
+              </div>
+            </details>
+
+<h3 id="规格化浮点数"><a href="#规格化浮点数" class="headerlink" title="规格化浮点数"></a>规格化浮点数</h3><p>很明显一个数的浮点数表示并不唯一。且浮点数的数值表示范围由阶码决定，数值的精度由尾数决定。规格化浮点数就是为了充分利用位数来表示有效数字。<br>规格化浮点数就是将尾数的绝对值限定在在区间[0.5,1]</p>
+<h4 id="尾数用原码-x2F-补码表示"><a href="#尾数用原码-x2F-补码表示" class="headerlink" title="尾数用原码&#x2F;补码表示"></a>尾数用原码&#x2F;补码表示</h4><table>
+<thead>
+<tr>
+<th>码制</th>
+<th>符号位</th>
+<th>正数</th>
+<th>负数</th>
+<th>表示数值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>原码</td>
+<td>单号符号位</td>
+<td>0.1XXXX</td>
+<td>1.1XXXX</td>
+<td>[0.5,1]</td>
+</tr>
+<tr>
+<td>原码</td>
+<td>双号符号位</td>
+<td>00.1XXXX</td>
+<td>11.1XXXX</td>
+<td>[-1,-0.5]</td>
+</tr>
+<tr>
+<td>补码</td>
+<td>单号符号位</td>
+<td>0.1XXXX</td>
+<td>1.0XXXX</td>
+<td>[0.5,1]</td>
+</tr>
+<tr>
+<td>补码</td>
+<td>双号符号位</td>
+<td>00.1XXXX</td>
+<td>11.0XXXX</td>
+<td>[-1,-0.5]</td>
+</tr>
+</tbody></table>
+<p><strong>采用双符号位可以很方便地判断溢出的问题</strong></p>
+<h3 id="IEEE754规格化浮点数"><a href="#IEEE754规格化浮点数" class="headerlink" title="IEEE754规格化浮点数"></a>IEEE754规格化浮点数</h3><h4 id="3种IEEE754标准（浮点数格式）"><a href="#3种IEEE754标准（浮点数格式）" class="headerlink" title="3种IEEE754标准（浮点数格式）"></a>3种IEEE754标准（浮点数格式）</h4><p>IEEE 754标准的浮点数有短浮点数（单精度、float型）、长浮点数（双精度、double型）、临时浮点数这三种。</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>字长</th>
+<th>符号位</th>
+<th>阶码</th>
+<th>尾数</th>
+<th>最大指数</th>
+<th>最小指数</th>
+<th>可表示的实数范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>32bit</td>
+<td>1 bit</td>
+<td>8 bit</td>
+<td>23 bit</td>
+<td>+127</td>
+<td>-126</td>
+<td>10^-38^ ~ 10^38^</td>
+</tr>
+<tr>
+<td>double</td>
+<td>64bit</td>
+<td>1 bit</td>
+<td>11 bit</td>
+<td>52 bit</td>
+<td>+1023</td>
+<td>-1022</td>
+<td>10^-308^ ~ 10^308^</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>80bit</td>
+<td>1 bit</td>
+<td>15bit</td>
+<td>64bit</td>
+<td>+16383</td>
+<td>-16382</td>
+<td>10^-4932^ ~ 10^4932^</td>
+</tr>
+</tbody></table>
+<details class="gray" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>根据IEEE754标准的编码的值分为（规格化，非规格化，特殊值）这三种情况 </summary>
+              <div class='content'>
+              <p class='h5' id="规格化的值"><a href="#规格化的值" class="headerlink" title="规格化的值"></a>规格化的值</h5><p>当阶码部分全为0也不全为1时，即为规格化的值。</p><p>对于尾数部分，预定小数点左边隐含有一位1，因此单精度浮点数的有效位数为24位，即位数为1.a<sub>1</sub>..a<sub>23</sub></p><h5 id="非规格化"><a href="#非规格化" class="headerlink" title="非规格化"></a>非规格化</h5><p>当阶码部分全为0，即为非规格化的值。</p><p>可以这样理解当一个很小的小数，再进行一般规格化处理时，向左偏移了最大偏移量127次以后，阶码部分是0</p><p>非规格化的两个用途：</p><blockquote><ol><li><p>用来表示数值0</p><p>当符号位为1，其余皆为零时，此时为+0.0，而符号位为0时为-0.0.</p></li><li><p>无限接近0的数</p><p>因为规格化的表示方法下无法表示出0 (因为尾数始终大于1)，所以要使用非规格化的值。</p></li></ol></blockquote><h5 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h5><p>当阶码部分全为1时，即为特殊值</p><blockquote><p>当尾数部分全为零时，表示无穷大。</p><p>当尾数部分不全为零时，表示NaN（不是一个数）</p></blockquote>
+              </div>
+            </details>
+
+<h3 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>设有两个浮点数X、Y,实现X+-Y，X&#x3D;M<sub>x</sub>2<sup>Ey</sup>,Y&#x3D;M<sub>x</sub>y2<sup>Ey</sup>均为规格化数</p>
+<h4 id="运算步骤"><a href="#运算步骤" class="headerlink" title="运算步骤"></a>运算步骤</h4><ol>
+<li>对阶</li>
+</ol>
+<blockquote>
+<p> 使两个数的阶码相同，令K&#x3D;|E<sub>x</sub>-E<sub>y</sub>|，把阶码小的数向右移K位，使其阶码加上K。</p>
+</blockquote>
+<ol start="2">
+<li>尾数求和（差）</li>
+</ol>
+<blockquote>
+<p>执行对阶后，两尾数进行加&#x2F;减运算，得到两数之和&#x2F;差。</p>
+</blockquote>
+<ol start="3">
+<li>规格化并判断溢出</li>
+</ol>
+<blockquote>
+<p>若运算的结果所得不是规格化数，则需要进行规格化处理，当尾数溢出时，需要调整阶码</p>
+</blockquote>
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>如何进行规格化 </summary>
+              <div class='content'>
+              <p>规格化规则：<br>如果结果的两个符号位的值不同，表示加减法运算尾数结果溢出。此时将尾数结果右移1位，阶码E+1，称为向右规格化，简称“右规”。<br>如果结果的两个符号位的值相同，表示加减法运算尾数结果不溢出。若最高数值位与符号位相同，此时尾数连续左移，直到最高数值位与符号位的值不同为止。同时 E-m(移位的位数) ,称为向左规格化，简称“左规”。</p>
+              </div>
+            </details>
+
+<ol start="4">
+<li>舍入处理</li>
+</ol>
+<blockquote>
+<p>结果右归时位数的最低位将因移出而丢掉，求得最小运算差。</p>
+</blockquote>
+<ol start="5">
+<li>溢出判别</li>
+</ol>
+<blockquote>
+<p>以阶码为准，若阶码溢出，运算结果溢出，阶码下溢，结果为零</p>
+</blockquote>
+<h1 id="校验码"><a href="#校验码" class="headerlink" title="校验码"></a>校验码</h1>
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 每日一句</li>
+        <li><strong>标题:</strong> 计算机基础知识</li>
         <li><strong>作者:</strong> 故故</li>
         <li><strong>创建于
-                :</strong> 2023-07-11 21:09:11</li>
+                :</strong> 2023-10-03 15:29:53</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-07-28 14:07:47
+                    :</strong> 2023-10-07 16:55:58
             </li>
         
         <li>
-            <strong>链接:</strong> https://redefine.ohevan.com/2023/07/11/每日一句/
+            <strong>链接:</strong> https://redefine.ohevan.com/2023/10/03/计算机组成与体系结构/计算机基础/
         </li>
         <li>
             <strong>
@@ -461,7 +648,31 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/English/">#English</a>&nbsp;
+                        <a href="/tags/%E6%B5%AE%E7%82%B9%E6%95%B0/">#浮点数</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%8E%9F%E7%A0%81/">#原码</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%8F%8D%E7%A0%81/">#反码</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%A1%A5%E7%A0%81/">#补码</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E7%A7%BB%E7%A0%81/">#移码</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%AE%A1%E7%BB%84/">#计组</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">#计算机基础</a>&nbsp;
                     </li>
                 
             </ul>
@@ -475,13 +686,13 @@
                     <div class="article-prev">
                         <a class="prev"
                         rel="prev"
-                        href="/2023/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"
+                        href="/2023/10/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">计算机基础知识</span>
+                                <span class="post-nav-title-item">计算机组成</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -491,10 +702,10 @@
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023/07/02/GitHub+hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"
+                        href="/2023/07/11/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">GitHub+hexo搭建博客网站</span>
+                                <span class="post-nav-title-item">每日一句</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -559,8 +770,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">每日一句</div>
-        
+        <div class="page-title">计算机基础知识</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">数据的表示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A0%81%E5%88%B6%EF%BC%88%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E5%92%8C%E7%A7%BB%E7%A0%81%EF%BC%89"><span class="nav-text">码制（原码、反码、补码和移码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">浮点数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E4%B8%8E%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">浮点数与定点数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-text">浮点数的格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%84%E6%A0%BC%E5%8C%96%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">规格化浮点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IEEE754%E8%A7%84%E6%A0%BC%E5%8C%96%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-text">IEEE754规格化浮点数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数运算</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="nav-text">校验码</span></a></li></ol>
 
     </div>
 </div>
