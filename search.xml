@@ -366,10 +366,181 @@
   <entry>
     <title>计算机组成</title>
     <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="计算机的基本组成"><a href="#计算机的基本组成" class="headerlink" title="计算机的基本组成"></a>计算机的基本组成</h1><p>计算机的基本硬件系统又运算器、控制器、存储器、输入&#x2F;输出设备5大部分组成。其中运算器、控制器等部件被集成在一起称为中央处理单元（CPU）,存储器是计算机的记忆设备，，输入输出设备合称外设。</p>
+<h2 id="中央处理单元CPU"><a href="#中央处理单元CPU" class="headerlink" title="中央处理单元CPU"></a>中央处理单元CPU</h2><p>CPU计算机系统的核心不见，它负责获取程序指令对指令进行译码加以执行</p>
+<h3 id="CPU的功能"><a href="#CPU的功能" class="headerlink" title="CPU的功能"></a>CPU的功能</h3><ol>
+<li><p>程序(指令)控制</p>
+<blockquote>
+<p>按照顺序进行取指操作，由控制器CU完成取指和分析指令的操作。</p>
+</blockquote>
+</li>
+<li><p>操作控制</p>
+<blockquote>
+<p>能对指令进行译码、寄存、执行的有关操作。</p>
+</blockquote>
+</li>
+<li><p>时间控制</p>
+<blockquote>
+<p>对各种操作进行的时间实施定时。</p>
+</blockquote>
+</li>
+<li><p>数据处理</p>
+<blockquote>
+<p>够进行算术运算和逻辑运算，该功能的实现由ALU寄存器（算术逻辑单元）完成。</p>
+</blockquote>
+</li>
+<li><p>处理中断</p>
+<blockquote>
+<p>能够响应输入输出设备发出的中断请求。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="CPU组成"><a href="#CPU组成" class="headerlink" title="CPU组成"></a>CPU组成</h3><p>CPU的主要组成由运算器、控制器、寄存器和内部总线等部件组成</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.statically.io/gh/GuGuG-G/Blog@main/Knowledge/2-01.png"
+                      alt="2-01"
+                ></p>
+<h4 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h4><h5 id="运算器的功能"><a href="#运算器的功能" class="headerlink" title="运算器的功能"></a>运算器的功能</h5><blockquote>
+<p>执行所有的算术运算</p>
+<p>执行所有的罗技运算并进行逻辑测试</p>
+</blockquote>
+<h5 id="运算器的组成"><a href="#运算器的组成" class="headerlink" title="运算器的组成"></a>运算器的组成</h5><p>算数逻辑单元（ALU）</p>
+<p>累加寄存器（AC）</p>
+<p>数据缓冲寄存器（DR）</p>
+<p>状态条件寄存器（PSW）</p>
+<h4 id="控制器-CU，Control-Unit"><a href="#控制器-CU，Control-Unit" class="headerlink" title="控制器(CU，Control Unit)"></a>控制器(CU，Control Unit)</h4><p>控制CPU的工作，控制器一般由 指令控制逻辑，时序控制逻辑、总线控制逻辑和终端控制逻辑。</p>
+<h5 id="控制器的功能"><a href="#控制器的功能" class="headerlink" title="控制器的功能"></a>控制器的功能</h5><p>取指令：指令控制</p>
+<p>分析指令：操作控制</p>
+<p>执行指令，发出各种操作命令控制程序输入及结果的输出：时间控制</p>
+<p>总线管理：处理中断</p>
+<p>处理异常情况和特殊请求：数据加工</p>
+<h5 id="控制器的组成"><a href="#控制器的组成" class="headerlink" title="控制器的组成"></a>控制器的组成</h5><p>指令寄存器（IR）</p>
+<p>程序计数器（PC）</p>
+<p>地址寄存器（AR）</p>
+<p>指令译码器（ID）</p>
+<h4 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h4><p>寄存器是用来暂时保存运算和控制过程中的原始数据，中间结果，最终结果以及控制、状态信息的。CPU的寄存器被分为：用户可见寄存器、控制和状态寄存器</p>
+<h5 id="用户可见寄存器"><a href="#用户可见寄存器" class="headerlink" title="用户可见寄存器"></a>用户可见寄存器</h5><p>通用寄存器：存放原始数据和运算结果，一般由CPU直接访问，CPU对寄存器的访问速度远大于访问主存的速度。</p>
+<p>数据寄存器：存放操作数、运算结果和运算的中间结果，以减少访问存储器的次数。寄存了将要写入到计算机主存储器（例如：RAM）的数据，或由计算机主存储器读取后的数据。它就像缓冲器，持有从内存复制的数据，以准备给处理器使用。</p>
+<p>地址寄存器：用来保存当前CPU所访问的内存单元的地址。由于在内存和CPU之间存在着操作速度上的差别，所以必须使用地址寄存器来保持地址信息，直到内存的读&#x2F;写操作完成为止 。</p>
+<p>条件码寄存器：存放条件码（条件码：体现当前指令执行结果的各种状态信息，如有无进位（CF位）、有无溢出（OV位）、结果正负（SF位）、结果是否为零（ZF位）、奇偶标志位（P位）等），可作程序分支的依据。</p>
+<h5 id="控制和状态寄存器"><a href="#控制和状态寄存器" class="headerlink" title="控制和状态寄存器"></a>控制和状态寄存器</h5><p>控制寄存器：控制寄存器（CR0～CR3）用于控制和确定处理器的操作模式以及当前执行任务的特性。</p>
+<p>PSW寄存器：保存由算数指令和逻辑指令运算或测试结果建立的各种条件码，保存中断和系统工作状态等信息。</p>
+<h2 id="存储结构"><a href="#存储结构" class="headerlink" title="存储结构"></a>存储结构</h2><h3 id="层次化存储结构"><a href="#层次化存储结构" class="headerlink" title="层次化存储结构"></a>层次化存储结构</h3><h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><h3 id="主存编址"><a href="#主存编址" class="headerlink" title="主存编址"></a>主存编址</h3><h2 id="I-x2F-O数据传输控制方式"><a href="#I-x2F-O数据传输控制方式" class="headerlink" title="I&#x2F;O数据传输控制方式"></a>I&#x2F;O数据传输控制方式</h2><h2 id="总线系统"><a href="#总线系统" class="headerlink" title="总线系统"></a>总线系统</h2>]]></content>
       <categories>
         <category>计算机组成与体系结构</category>
         <category>计算机组成</category>
       </categories>
+      <tags>
+        <tag>CPU</tag>
+        <tag>存储系统</tag>
+        <tag>I/O数据传输方式</tag>
+        <tag>总线控制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机操作系统</title>
+    <url>/2023/10/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机组成与体系结构</category>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>文件管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/11/16/Unity%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E5%BC%80%E5%8F%91/Unity%E9%9D%A2%E8%AF%95/Unity%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%20%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<p>#Unity面试题</p>
+<h2 id="C-基础"><a href="#C-基础" class="headerlink" title="C#基础"></a>C#基础</h2><ol>
+<li><p>private与internal的区别？ </p>
+<p>private:可以修饰类（嵌套类）、属性、方法，表示类、结构体的内部是可见的。</p>
+<p>internal:表示程序集可见</p>
+</li>
+<li><p>如何理解装箱拆箱，那个更耗内存为什么？</p>
+<p>拆箱：将引用类型转换成值类型，本身不会的导致在堆上分配内存，只是将堆上的值拷贝到栈上。</p>
+<p>装箱：将值类型转换成引用类型，会在堆上分配内存，并将栈上的值拷贝到堆中。</p>
+<p>装箱会更耗，因为会导致堆内存的分配。</p>
+</li>
+<li><p>in和ref的异同</p>
+<p>相同：in和ref都表示以引用的方式传值，进行性能优化</p>
+<p>不同：in：只读的引用传递，使用时参数不需要初始化，<br>        ref：可读可写的引用传递，使用时参数需要初始化</p>
+</li>
+<li><p>override和new在修饰函数的时候的区别。</p>
+<p>override ：表示在派生类中重写了基类中的虚方法，是实现多态性的关键。</p>
+<p>new：表示在派生类中提供了一个新的隐藏方法，该方法与基类中的同名方法无关，不构成方法的重写，与多态无关。</p>
+</li>
+<li><p>interface和abstract类的区别</p>
+</li>
+</ol>
+<p>  interface: </p>
+<ul>
+<li>接口只包含方法、属性、索引器和事件的声明，不包含实现，字段。</li>
+<li>类可以实现多个接口，从而实现多重继承</li>
+<li>接口中的成员默认为公共的，不允许包含访问修饰符。</li>
+<li>接口用于定义类之间的契约，实现接口的类必须提供接口中定义的所有成员的具体实现。</li>
+<li>接口可以帮助实现代码的松耦合，提高代码的灵活性和可维护性。</li>
+</ul>
+<p>   abstract：</p>
+<ul>
+<li>抽象类可以包含字段、构造函数、属性、抽象方法和具体方法的实现。</li>
+<li>类只能继承一个抽象类</li>
+<li>抽象可以包含访问修饰符</li>
+<li>抽象类不能被实例化，只能用作基类</li>
+<li>子类必须实现抽象类中的所有抽象方法，但可以选择性地重写具体方法</li>
+</ul>
+<p>  总结：</p>
+<ul>
+<li><p>接口用于定义类之间的契约，强调类实现的行为。</p>
+</li>
+<li><p>抽象类用于定义类的结构和行为，强调类的层次结构。</p>
+</li>
+<li><p>如果一个类需要表示 is-a 关系，并且具有一些通用的实现，可以使用抽象类。如果一个类需要表示 has-a 关系，可以使用接口。</p>
+</li>
+</ul>
+<ol start="6">
+<li><p>一个空的类对象，会占用内存么？</p>
+<p>会的。一个空对象占用24字节。在.NET框架中，每个对象都包含一个对象头（object header），在64位系统上通常是8字节。</p>
+<ul>
+<li>对象头：8字节</li>
+<li>类型信息：8字节</li>
+<li>字段对其：8字节</li>
+</ul>
+</li>
+<li><p>类型的成员函数会占用对象的内存么？</p>
+<p>不会。函数本身是一对指令的集合，存放在程序的元数据中。</p>
+</li>
+<li><p>结构体的默认内存布局是怎么样的？</p>
+</li>
+</ol>
+<ul>
+<li><p>元素开始的地址是其字节大小的整数倍</p>
+</li>
+<li><p>struct的大小是其最大元素字节大小的整数倍</p>
+<div class="highlight-container" data-rel="C#"><figure class="iseeu highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">struct</span> Struct_1</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">int</span> a;<span class="comment">//4byte</span></span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">long</span> b;<span class="comment">//8byte</span></span><br><span class="line">&#125;<span class="comment">//大小为16byte</span></span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<ol start="9">
+<li><p>结构体当Key的时候怎么才能避免GC,为什么?<br>结构体当key,产生GC的原因:</p>
+<ul>
+<li>object的GetHashCode来计算在桶中的index</li>
+<li>IEquatable接口进行key的比较，结构体会装箱成object。</li>
+</ul>
+<p>结构体只要重写GetHashCode方法和实现IEquatable接口就能避免GC。</p>
+</li>
+<li><p>stackalloc的作用</p>
+<p>当需要临时存储少量数据并且性能要求太高时，可以使用stackalloc在栈上分配内存来避免堆分配和垃圾回收的开销，要注意因为栈的空间有限，分调太大的内存肯能导致栈的溢出。</p>
+</li>
+<li><p>在try-catch-finally 结构的catch中throw一个新的异常后，finally在代码还会执行么。</p>
+<p>会。 </p>
+<p>finally代码保证一定会执行，就算再try直接return，finally也会执行</p>
+</li>
+<li><p>span和memory主要有什么区别？</p>
+<p>span是一个ref struct，只能在栈上分配，不能作为类的成员字段，不能用于异步方法。memory可以在堆上分配，能过够用于异步方法，也能作为类的成员函数，span的性能更高。</p>
+</li>
+</ol>
+]]></content>
   </entry>
 </search>
